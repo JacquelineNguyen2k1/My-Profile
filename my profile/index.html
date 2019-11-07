@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Home </title>
+</head>
+
+<body>
+
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito|Open+Sans|Poppins:700&display=swap" rel="stylesheet">
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/index.top.png" width="100"></button>
+
+	<script>
+	// Home button
+	var mybutton = document.getElementById("myBtn");
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+	    mybutton.style.display = "block";
+	  } else {
+	    mybutton.style.display = "none";
+	  }
+	}
+	function topFunction() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
+	}
+</script>
+
+	<header class="topnav" id="myTopnav">
+		<nav>
+			<a href="index.html"  class="active">Home</a>
+			<a href="about.html" >About Myself</a>
+			<a href="interest.html" >Interest in IT</a>
+			<a href="job.html" >Ideal Job</a>
+			<a href="profile.html" >Personal Profile</a>
+			<a href="project.html" >Project Idea</a>
+		</nav>
+	</header>
+
+	<section class="main">
+		<h1>
+			<div class="head">Welcome To My Website</div>
+		</h1>
+
+		<div class="space"></div>
+
+		<div class="cards">
+			<a href="#about" id="aboutnav">
+				<img class="card" src="images/card1.png">
+			</a>
+			<a href="#interest" id="interestnav">
+				<img class="card" src="images/card2.png">
+			</a>
+			<a href="#job" id="jobnav">
+				<img class="card" src="images/card3.png">
+			</a>
+			<a href="#profile" id="profilenav">
+				<img class="card" src="images/card4.png">
+				</a>
+			<a href="#project" id="projectnav">
+				<img class="card" src="images/card5.png">
+			</a>
+		</div>
+
+		<div class="space"></div>
+
+		<section id="intro">
+			<div class="grayinfo" id="about">
+				<img src="images/about.jpg" title="According to someone, I'm a Ravenclaw, apparently." class="grayinfoimg">
+				<div class="grayinfotext">
+					<h2>ABOUT MYSELF</h2>
+					<p>Name: Nguyen Pham Nhu Hao (Jacqueline Nguyen)</p>
+					<p>Student number: s3818000</p>
+					<p>E-mail: You can contact me via <a href="mailto:s3818000@rmit.edu.vn" class="email">s3818000@rmit.edu.vn</a> or <a href="mailto:jacquelinenguyen.2k1@gmail.com" class="email">jacquelinenguyen.2k1@gmail.com</a></p>
+					<div class="smallspace"></div>
+					<a href="about.html"  class="button"><b>Read more</b></a>
+				</div>
+			</div>
+
+			<div class="space"></div>
+
+			<div class="whiteinfo" id="interest">
+				<img src="images/interest.jpg" title="My interest in IT" class="whiteinfoimg">
+				<div class="whiteinfotext">
+					<h2>INTEREST IN IT</h2>
+					<p>I am interested in the research side of IT.</p>
+					<p>I study at RMIT because of its accomodating facilities and environment.</p>
+					<p>I am looking forward to learning a multitude of subjects.</p>
+					<div class="smallspace"></div>
+					<a href="interest.html"  class="button"><b>Read more</b></a>
+				</div>
+			</div>
+
+			<div class="space"></div>
+
+			<div class="grayinfo" id="job">
+				<img src="images/job.jpg" title="The ideal job for me is writing" class="grayinfoimg">
+				<div class="grayinfotext">
+					<h2>IDEAL JOB</h2>
+					<p>I am aiming for a technical writing career abroad.</p>
+					<div class="smallspace"></div>
+					<a href="job.html"  class="button"><b>Read more</b></a>
+				</div>
+			</div>
+
+			<div class="space"></div>
+
+			<div class="whiteinfo" id="profile">
+				<img src="images/profile.jpg" title="Hello darkness my old friend" class="whiteinfoimg">
+				<div class="whiteinfotext">
+					<h2>PERSONAL PROFILE</h2>
+					<p>Discover:</p>
+					<ul id="profilelist">
+						<li><a href="profile.html#myers-briggs">My Myers-Briggs personality test results</a></li>
+						<li><a href="profile.html#learning-style">My learning style test results</a></li>
+						<li><a href="profile.html#creativity">My creativity test results</a></li>
+					</ul>
+					<div class="smallspace"></div>
+					<a href="profile.html"  class="button"><b>Read more</b></a>
+				</div>
+			</div>
+
+			<div class="space"></div>
+
+			<div class="grayinfo" id="project">
+				<img src="images/project.jpg" title="What's the project?" class="grayinfoimg">
+				<div class="grayinfotext">
+					<h2>PROJECT IDEA</h2>
+					<p><i>Nothing here because SPOILERS</i></p>
+					<div class="smallspace"></div>
+					<a href="project.html" class="button"><b>Read more</b></a>
+				</div>
+			</div>
+
+			<div class="space"></div>
+		</section>
+	</div>
+</body>
+</html>

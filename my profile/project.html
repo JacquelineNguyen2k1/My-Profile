@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Project Idea </title>
+</head>
+<body>
+	<link rel="stylesheet" type="text/css" href="css/project.css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito|Open+Sans|Poppins:700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/project.top.png" width="100"></button>
+
+	<script>
+	// Home button
+	var mybutton = document.getElementById("myBtn");
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+	    mybutton.style.display = "block";
+	  } else {
+	    mybutton.style.display = "none";
+	  }
+	}
+	function topFunction() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
+	}
+	</script>
+
+	<header class="topnav" id="myTopnav">
+		<nav>
+			<a href="index.html" >Home</a>
+			<a href="about.html" >About Myself</a>
+			<a href="interest.html" >Interest in IT</a>
+			<a href="job.html" >Ideal Job</a>
+			<a href="profile.html" >Personal Profile</a>
+			<a href="project.html" class="active">Project Idea</a>
+		</nav>
+	</header>
+
+	<section class="main">
+		<h1>
+			<div class="head">Project Idea</div>
+		</h1>
+
+		<div class="space"></div>
+
+		<div class="qa">
+			<img src="images/LITTLE-FEAT.png">
+			<h2 class="question">WHAT IS LITTLE FEAT?</h2>
+			<div class="answer">
+				<p>On a fateful day, I suddenly had an epiphany. The reason why I was so bored in life was due to my lack of stimulation and plans for the future. <i>How to escape this predicament?</i> I wondered to myself. Since I cannot wait for the exciting things to come my way, I might as well find them myself then. And I cannot be the only one in this situation. All of us, at many points in our life, have bemoaned how bored we are when we have nothing to do. And so, Little Feat was conceptualized.</p>
+				<p>Little Feat is a mobile app that allow users to take on challenges presented to them and propose their own challenges to others. It is a small community that focus on spreading little bouts of fun in our monotonous daily life.</p>
+			</div>
+			<h2 class="question">HOW DOES LITTLE FEAT WORK?</h2>
+			<div class="answer">
+				<p>Little Feat can be accessible both offline and online.</p>
+				<p>Users will be registered and asked for age, for reasons being stated below. Users can choose avatars, nicknames and background colors, to start with. The fundamental feature of Little Feat is providing challenges. Users can customize their time limit for the challenge if they desire. During the course of the challenge, Little Feat will send notifications (which is a feature that can be modified also) to remind users to be on track. There is a feature called progress diary, which allows users to post photos, statuses, and thoughts about their challenge. Once the challenge is over, they can look back to see how they have done it. In the community, users can add friends (and block), use the chatroom, and create groups. They can also decide for their info and challenges to be public or not.</p>
+				<p>Types of challenge:</p>
+				<ol>
+					<li>Default challenges: Self-explanatory.</li>
+					<li>Online challenges, or community challenges: Only accessible when users are connected to the Internet. Community challenges are more varied, but there are some that demand users to verify their age for age-appropriate content. Users can search for specific challenges via names, tags, or popularity. Community challenges are proposed by users themselves.</li>
+					<li>Direct challenges: A user sends a community challenge to another. The challenge can only be accepted as complete when the sender deems so.</li>
+				</ol>
+				<p>Point system: Default challenges have default points depending on their difficulty. Community challenges as well as direct challenges give out points depending on how popular the challenges are and the user’s rank on the chart. Every three months, users will gain points from their position on the chart and the chart will be emptied. Proposers also gain extra points from every time their challenges are used.</p>
+			</div>
+			<h2 class="question">WHAT NEEDS TO BE DONE TO CREATE LITTLE FEAT?</h2>
+			<div class="answer">
+				<p>I need an app making tool, obviously. But before that step, I need to take into account some things first.</p>
+				<p>First, I need to <b>create a mockup</b> to outline a rough sketch of the app’s design and user interfaces. A mockup shows how my app functions. It is a necessary step, although I don’t have the required skills yet. There is a website called <a href="https://moqups.com/" target="_blank">Moqups</a> which helps creators use app mockups, and it has the instructions written down for newbies like me.</p>
+				<p>Next, I need to <b>make the graphic design</b>. Again, I have no experience about graphic design for apps specifically, but I have experience using Canva and Adobe Illustrator, the latter I am still not familiar with enough. It is recommended that I can use <a href="https://www.canva.com/" target="_blank">Canva</a> for app graphics, or other popular tools such as <a href="https://klex.io/" target="_blank">Klex</a> and <a href="https://pixlr.com/" target="_blank">Pixlr</a>.</p>
+				<p>Finally, I can start to <b>build my app</b>. <a href="https://www.appypie.com/app-builder" target="_blank">AppyPie</a> is highly recommended as the go-to app maker. Let me reiterate that I do not have experience in building apps, but from what I can see, it does not look very difficult compared to other programming languages I have learned.</p>
+				<p>So, those are the three steps in creating an app.</p>
+			</div>
+			<h2 class="question">WHAT WILL LITTLE FEAT SOLVE?</h2>
+			<div class="answer">
+				<p>As stated above, Little Feat is expected to be a solution to the boredom of everyday life. However, it is just my thought on the subject. I believe many people will not agree with me and insist that there are multiple ways we can alleviate the problem. Nevertheless, for many others, all they need is a push to escape from their lethargy, and I hope Little Feat will be their perfect companion on this exciting journey.</p>
+			</div>
+		</div>
+
+		<script>
+		var coll = document.getElementsByClassName("question");
+		var i;
+
+		for (i = 0; i < coll.length; i++) {
+		  coll[i].addEventListener("click", function() {
+		    this.classList.toggle("qaactive");
+		    var content = this.nextElementSibling;
+		    if (content.style.maxHeight){
+		      content.style.maxHeight = null;
+		    } else {
+		      content.style.maxHeight = content.scrollHeight + "px";
+		    } 
+		  });
+		}
+		</script>
+
+		<div class="space"></div>
+
+	</section>
+</body>
+</html>

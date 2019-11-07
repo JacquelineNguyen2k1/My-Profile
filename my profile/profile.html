@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Personal Profile </title>
+</head>
+<body>
+	<link rel="stylesheet" type="text/css" href="css/profile.css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito|Open+Sans|Poppins:700&display=swap" rel="stylesheet">
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/profile.top.png" width="100"></button>
+
+	<script>
+	// Home button
+	var mybutton = document.getElementById("myBtn");
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+	    mybutton.style.display = "block";
+	  } else {
+	    mybutton.style.display = "none";
+	  }
+	}
+	function topFunction() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
+	}
+	</script>
+
+	<header class="topnav" id="myTopnav">
+		<nav>
+			<a href="index.html" >Home</a>
+			<a href="about.html" >About Myself</a>
+			<a href="interest.html" >Interest in IT</a>
+			<a href="job.html"  >Ideal Job</a>
+			<a href="profile.html" class="active">Personal Profile</a>
+			<a href="project.html" >Project Idea</a>
+		</nav>
+	</header>
+
+	<section class="main">
+		<h1>
+			<div class="head">Personal Profile</div>
+		</h1>
+
+		<div class="space"></div>
+
+		<div>
+			<div class="info" id="myers-briggs">
+				<h2>My Myers-Briggs Type Indicator (MBTI) results</h2>
+				<div class="content">
+					<figure>
+						<img src="images/myers-briggs2.png">
+						<figcaption>Source: <a href="https://www.16personalities.com" target="_blank">16Personalities</a></figcaption>
+					</figure>
+					<h3>Meaning</h3>
+					<p>According to these results, I am a sympathetic kind of person with "an inborn sense of idealism and morality". Helping others is my purpose in life. When some people are troubled, instead of thinking about their suffering, I will start thinking up ways to make their situation better. However, this optimism does not often go well with practicality and lead to negative outcomes. I might overlook important problems, focus on the bright side and get upset when things are unexpected. Another trait of mine is that I am not deeply influenced by opinions of others and choose to go my own way, which sometimes can be detrimental.</p>
+					<p>In the workplace, I am likely to attract many colleagues and act as a mediator to defuse the situation. However, my inner circle of friends consists of only a few trusted people. Advocates like me are still introverts and individualists, so although I enjoy company, I will prefer solitude from time to time. I am also prone to putting more importance on teamwork over overall performance and being a pushover. Stress does not strlongly affect me, which is a bonus.</p>
+					<h3>Impact on teamwork</h3>
+					<p>I am likely to agree with the majority on a subject and work as an anchor of the team. Whenever there appears hostility, I will try to alleviate the problem. When a team member has troubles, I may try to help them with their work or personal issues. It might be hard work juggling between assignments and drama among the team, but I may not be affected much and just keep going.</p>
+					<h3>Food for thought</h3>
+					<p>When assembling a team, my prority is who my team members are. I will prefer working with people I trust, because then I will not waste time obssessing over their work progress and efficiency. The members should be familiar and compatible with each other to avoid unnecessary drama. I prefer delegating tasks so that each member do their own thing, which will give me some space to work individually. I would like to be the one to vet the final product and make sure everyone is happy with it.</p>
+					<p>All in all, teamwork is important.</p>
+				</div>
+			</div>
+			
+			<div class="smallspace"></div>
+
+			<div class="info" id="learning-style">
+				<h2>My learning style test results</h2>
+				<div class="content">
+					<h3>Meaning</h3>
+					I am pretty well-rounded when it comes to learning styles. I can adapt visual, auditory and kinesthetic learning styles. However, visual learning seems to be my primary learning style, followed by auditory and kinesthetic styles.
+					<figure>
+						<img src="images/learning-styles.png">
+						<figcaption>Source: <a href="https://personalitymax.com/learning-styles-test/" target="_blank">Personality Max</a></figcaption>
+					</figure>
+					<h3>Food for thought</h3>
+					<p>... Huh. I was not aware that I can learn that easily. Internship should be a breeze. Anyone in my team should easily help me understand stuff.</p>
+				</div>
+			</div>
+
+			<div class="smallspace"></div>
+
+			<div class="info" id="creativity">
+				<h2>My creativity test results</h2>
+				<div class="content">
+					<figure>
+						<img src="images/creativity.png">
+						<figcaption>Source: <a href="http://www.testmycreativity.com/" target="_blank">AULIVE</a></figcaption>
+					</figure>
+					<h3>Meaning</h3>
+					<p>I am more creative than normal standards by only a margin. Curiosity is my most valuable creativity aspect. My ability to connect seemingly unrelated concepts are much higher than normal. I am more persistent in finding new solutions to problems and more prone to pushing boundaries. I am less likely to accept and work with contradictory statements, and I am terrible at multitasking and handling large amounts of raw data.</p>
+					<h3>Impact on teamwork</h3>
+					<p>I am likely to be the one to propose ideas and solutions, though unable to sort them properly. I will be difficult to reason with if there is no concrete proof. Additionally, I may be a slow worker, seeing that I can only work one thing at a time, which may hinder the team's progress .</p>
+					<h3>Food for thought</h3>
+					<p>I figure I need team members who are logical, first of all. They should be open-minded and tolerant of unconventional ideas. There should be someone who is good at compiling data and someone else who can help me work faster.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="space"></div>
+	</section>
+</body>
+</html>

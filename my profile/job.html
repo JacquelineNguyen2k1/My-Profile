@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Ideal Job </title>
+</head>
+<body>
+	<link rel="stylesheet" type="text/css" href="css/job.css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito|Open+Sans|Poppins:700&display=swap" rel="stylesheet">
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/job.top.png" width="100"></button>
+
+	<script>
+	// Home button
+	var mybutton = document.getElementById("myBtn");
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+	    mybutton.style.display = "block";
+	  } else {
+	    mybutton.style.display = "none";
+	  }
+	}
+	function topFunction() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
+	}
+	</script>
+
+	<header class="topnav" id="myTopnav">
+		<nav>
+			<a href="index.html" >Home</a>
+			<a href="about.html" >About Myself</a>
+			<a href="interest.html" >Interest in IT</a>
+			<a href="job.html"  class="active">Ideal Job</a>
+			<a href="profile.html" >Personal Profile</a>
+			<a href="project.html" >Project Idea</a>
+		</nav>
+	</header>
+
+	<section class="main">
+		<h1>
+			<div class="head">Ideal Job</div>
+		</h1>
+
+		<div class="space"></div>
+
+		<div id="content">
+			<img src="images/writer.png" id="writer">
+			<a href="https://edel.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/477/?utm_medium=jobboard&utm_source=glassdoor" target="_blank"><img src="images/jobapp.png" id="web"></a>
+			<div class="row">
+			  	<div class="column left" style="background-image: url(images/job.banner1.jpg); background-size: all; background-repeat: no-repeat;"></div>
+			  	<div class="column middle">
+			  		<div>
+			  			<h2>DESCRIPTION</h2>
+				  		<p>This job requires writing technical articles, documentation and manuals to provide users with information about new products and updates from the company. A technical writer has to work with a team comprised of managers, editors, developers and experts to finish the product. I would love to collaborate with other people in the field in order to help the public understand more about IT and its usefulness in every aspect of our life.</p>
+				  		<h2>REQUIREMENTS</h2>
+				  		<ul>
+				  			<li>Prior working experience and knowledge in the field</li>
+				  			<li>Ability to convey complexed technical ideas to the masses in the form of brief yet understandable reading materials</li>
+				  			<li>Passion</li>
+				  			<li>Good command of American English</li>
+				  			<li>Familiarity with using one or some design softwares</li>
+				  			<li>Bachelor degree in computer science, computer engineering, or a related field</li>
+				  		</ul>
+				  		<p>English and passion checked, I guess.</p>
+				  		<h2>MY CURRENT PLAN <sup>BETA</sup></h2>
+				  		<img src="images/plan.png" style="width: 80%;">
+				  	</div>
+				  	<div class="smallspace"></div>
+			  	</div>
+				<div class="column right" style="background-image: url(images/job.banner3.jpg); background-size: all; background-repeat: no-repeat;"></div>
+			</div>
+
+			<div class="space"></div>
+		</div>
+</body>
+</html>

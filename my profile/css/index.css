@@ -1,0 +1,220 @@
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: black;
+  font-family: 'Open Sans', 'Nunito', sans-serif;
+  font-size: 20px;
+}
+
+.smallspace {
+  margin-top: 100px;
+}
+
+.space {
+  margin-top: 200px;
+}
+
+.topnav {
+  background-color: #f5f5f5;
+  overflow: hidden;
+  width: 100%;
+}
+
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px 24px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+
+.topnav a.active {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+
+.main {
+  margin-top: 0px;
+}
+
+h1 {
+  padding: 50px;
+  height: 400px;
+  background-color: #9966ff;
+  text-align: center;
+  background-position: relative;
+}
+
+.head {
+  font-family: 'Poppins', sans-serif;
+  padding: 150px;
+  color: white;
+  font-size: 60px;
+  font-weight: bolder;
+}
+
+.card {
+  width: 400px;
+}
+
+.cards {
+  padding: 0;
+  display: inline-block;
+  text-align: center;
+}
+
+.info {
+  overflow-y: scroll;
+}
+
+.grayinfo {
+  background-color: #d4d4d4;
+  overflow: auto;
+}
+
+.grayinfoimg {
+  padding: 0;
+  float: left;
+  width: 50%;
+  margin-right: 20px;
+}
+
+.grayinfotext {
+  text-align: left;
+}
+
+.whiteinfo {
+  overflow: auto;
+}
+
+.whiteinfoimg {
+  padding: 0;
+  float: right;
+  width: 50%;
+  margin-left: 20px;
+}
+
+.whiteinfotext {
+  text-align: right;
+}
+
+h2 {
+  font-family: 'Poppins';
+  font-size: 50px;
+}
+
+#about h2{
+  color: #fce205;
+}
+
+#interest h2 {
+  color: #38b6ff;
+}
+
+#job h2 {
+  color: #32cd32;
+}
+
+#profile h2 {
+  color: #ef7215;
+}
+
+#project h2 {
+  color: #ff2400;
+}
+
+.button {
+  padding: 20px 40px;
+  border: 5px solid white;
+  border-radius: 50px;
+  text-decoration: none;
+  color: white;
+}
+
+#about .button {
+  background-color: #fce205;
+}
+
+#about .button:hover {
+  background-color: #9966ff;
+}
+
+#interest .button {
+  background-color: #38b6ff;
+}
+
+#interest .button:hover {
+  background-color: #9966ff;
+}
+
+#job .button {
+  background-color: #32cd32;
+}
+
+#job .button:hover {
+  background-color: #9966ff;
+}
+
+#profile .button {
+  background-color: #ef7215;
+}
+
+#profile .button:hover {
+  background-color: #9966ff;
+}
+
+#project .button {
+  background-color: #ff2400;
+}
+
+#project .button:hover {
+  background-color: #9966ff;
+}
+
+.email {
+  color: black;
+  text-decoration: none;
+}
+
+.email:hover {
+  color: red
+}
+
+#profilelist {
+  list-style: none;
+}
+
+#profilelist a {
+  color: black;
+  text-decoration: none;
+}
+
+#profilelist a:hover {
+  color: red;
+}

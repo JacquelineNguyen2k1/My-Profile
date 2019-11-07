@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Interest in IT </title>
+</head>
+<body>
+	<link rel="stylesheet" type="text/css" href="css/interest.css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito|Open+Sans|Poppins:700&display=swap" rel="stylesheet">
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/interest.top.png" width="100"></button>
+
+	<script>
+	// Home button
+	var mybutton = document.getElementById("myBtn");
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+	    mybutton.style.display = "block";
+	  } else {
+	    mybutton.style.display = "none";
+	  }
+	}
+	function topFunction() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
+	}
+	</script>
+
+	<header class="topnav" id="myTopnav">
+		<nav>
+			<a href="index.html" >Home</a>
+			<a href="about.html" >About Myself</a>
+			<a href="interest.html"  class="active">Interest in IT</a>
+			<a href="job.html" >Ideal Job</a>
+			<a href="profile.html" >Personal Profile</a>
+			<a href="project.html" >Project Idea</a>
+		</nav>
+	</header>
+
+	<section class="main">
+		<h1>
+			<div class="head">Interest in IT</div>
+		</h1>
+
+		<div class="space"></div>
+
+		<div class="qa">
+			<img src="images/interest.banner1.jpg" style="width: 100%">
+			<button class="question">What is your interest in IT? When did your interest in IT start? Was there a particular event or person that sparked your interest? Outline your IT experience (if any).</button>
+			<div class="answer">
+			  <p>I am interested in the technical side of IT, which means a lot of research and information gathering. I would like to learn as much about IT as possible. I started to become interested in IT in my second year in high school. I know it was too late to properly familiarize myself with the subject, but I would try my best. As far as I am concerned, there was no particular factor which ignited my interest. However, I have been into VR/AR and ambisonics for a while, so maybe that. I have no specific experience in the field. However, I may have tampered with game codes using instructions online so...? I am proficient in Microsoft Word and Excel and have two Microsoft Office Specilaist certificates in those areas.</p>
+			</div>
+			<button class="question">Why did you choose to come to RMIT?</button>
+			<div class="answer">
+			  <p>RMIT is a pretigious university in Vietnam. It has a accomodating environment towards students and is a great place to start networking. It also provides a good study environment with excellent facilities that is crucial in IT. I also want to build my character and acquire soft and interpersonal skills during my time at univeristy in order to help myself later in the workplace, all of which RMIT can cater to.</p>
+			</div>
+			<button class="question">What do you expect to learn during your studies?</button>
+			<div class="answer">
+			  <p>I expect to learn a lot of things. Theory-wise, I expect to learn about how software and hardware work in general and their application. There may be classes regarding ethics, economics and other non-technical subjects. Additionally, I expect to learn soft skills, such as writing reports and public speaking, as well as interpersonal skills a.k.a teamwork.</p>
+			</div>
+			<img src="images/interest.banner2.jpg" style="width: 100%">
+		</div>
+
+		<script>
+		var coll = document.getElementsByClassName("question");
+		var i;
+
+		for (i = 0; i < coll.length; i++) {
+		  coll[i].addEventListener("click", function() {
+		    this.classList.toggle("qaactive");
+		    var content = this.nextElementSibling;
+		    if (content.style.maxHeight){
+		      content.style.maxHeight = null;
+		    } else {
+		      content.style.maxHeight = content.scrollHeight + "px";
+		    } 
+		  });
+		}
+		</script>
+
+		<div class="space"></div>
+
+	</section>
+</body>
+</html>

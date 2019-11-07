@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> About Myself </title>
+</head>
+
+<body>
+	<link rel="stylesheet" type="text/css" href="css/about.css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito|Open+Sans|Poppins:700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/about.top.png" width="100"></button>
+
+	<script>
+	// Home button
+	var mybutton = document.getElementById("myBtn");
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+	    mybutton.style.display = "block";
+	  } else {
+	    mybutton.style.display = "none";
+	  }
+	}
+	function topFunction() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
+	}
+	</script>
+
+	<header class="topnav" id="myTopnav">
+		<nav>
+			<a href="index.html" >Home</a>
+			<a href="about.html"  class="active">About Myself</a>
+			<a href="interest.html" >Interest in IT</a>
+			<a href="job.html" >Ideal Job</a>
+			<a href="profile.html" >Personal Profile</a>
+			<a href="project.html" >Project Idea</a>
+		</nav>
+	</header>
+
+	<section class="main">
+		<h1>
+			<div class="head">About Myself</div>
+		</h1>
+
+		<div class="space"></div>
+
+		<div id="intro">
+			<img src="images/Hello!.png">
+			<div id="contact">
+				<p>Student number: s3818000</p>
+				<p>E-mail: You can contact me via <a href="mailto:s3818000@rmit.edu.vn" class="email">s3818000@rmit.edu.vn</a> or <a href="mailto:jacquelinenguyen.2k1@gmail.com" class="email">jacquelinenguyen.2k1@gmail.com</a></p></p>
+			</div>
+
+			<div class="row">
+				<div class="column2" id = "bluesect">
+					<p>I am from Vung Tau, Vietnam. My hometown is a small cultural melting pot, with many people of both Northern, Southern, and Middle origins living here.</p>
+					<p>I love travel and have had and enjoyed the opportunity to meet many people from diverse backgrounds, customs and beliefs.</p>
+				</div>
+				<div class="column2" id="greensect">
+					<p>I have finished high school and my best subject is English, so far.</p>
+					<p>I can speak both Vietnamese and English fluently. I am learning French and know basic phrases.</p>
+				</div>
+			</div>
+
+			<div class="row">
+			  	<div class="column left">
+			    	<figure>
+				    	<img src="images/photo-collage.jpg">
+				    	<figcaption>Some photos I have taken</figcaption>
+				    </figure>
+			  	</div>
+			  	<div class="column middle">
+				    <p>One of my hobbies include photography. I like taking photos when visiting new places.</p>
+				    <p>In my free time, I love curling up in hundreds layers of blanket, reading books with a steaming cup of coffee or tea next to me. I prefer fiction, especially adventure books with a side of humour and interesting concepts and worldbuilding. Some of the books I enjoy and definitely reccomend are:</p>
+				    <ul>
+				    	<li><i>Harry Potter</i> series</li>
+				    	<li>Good Omens</li>
+				    	<li><i>Artemis Fowl</i> series</li>
+				    	<li><i>Haruhi Suzumiya</i> series</li>
+				    </ul>
+				    <p>I also read comics, and have read many titles in fact. I like <i>DC</i> (including <i>Vertigo</i> and <i>Black Label</i> imprints) and <i>Marvel</i>, but I also read other comics, such as <i>IDW Publishing</i>'s <i>Transformers</i> series.
+				    <p>I am also a cinefan, although I do not have enough time or money to spend on films. The most recent film I watched was <i>Ad Astra</i> and it was stellar.</p>
+				    <p>I sometimes play games, and I enjoy indie games, but I will not say no to a good round of <i>Outlast</i> or <i>Assassin's Creed</i>.</p>
+				    <p>My favourite pastime, unsurprisingly, is writing. I love writing and coming up with ideas for worldbuilding, plot and characters. I have joined four writing community, although sadly, I have not published any story. However, if you are interested, please <a href="#intro" id="dm">DM</a> me.</p>
+				    <p>Hope you have a good day!</p>
+			  	</div>
+				<div class="column right">
+				    <figure>
+				    	<img src="images/books.png">
+				    	<figcaption>Books I have read. Source: <a href="https://amazon.com" target="_blank" title="I am a bibliophile. Sue me.">Amazon</a></figcaption>
+				    </figure>
+ 					<figure>
+				    	<img src="images/writing.jpg" title="I use ballpoint pens and my computer though.">
+				    	<figcaption>I enjoy writing in my free time</figcaption>
+				    </figure>
+				</div>
+			</div>
+		</div>
+		
+		<div class="space"></div>
+	</section>
+</body>
+</html>
