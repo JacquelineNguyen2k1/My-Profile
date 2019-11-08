@@ -109,9 +109,10 @@ h3 {
   margin-left: 20px;
 }
 
-#learning-styles figure img{
-  display: inline-block;
-  text-align: center;
+#learning-styles figure{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #creativity figure {
